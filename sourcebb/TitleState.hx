@@ -57,12 +57,12 @@ class TitleState extends MusicBeatState
 
 		super.create();
 
-		NGio.noLogin(APIStuff.API);
+		// NGio.noLogin(APIStuff.API);
 
-		#if ng
-		var ng:NGio = new NGio(APIStuff.API, APIStuff.EncKey);
-		trace('NEWGROUNDS LOL');
-		#end
+		// #if ng
+		// var ng:NGio = new NGio(APIStuff.API, APIStuff.EncKey);
+		//trace('NEWGROUNDS LOL');
+		// #end
 
 		FlxG.save.bind('funkin', 'ninjamuffin99');
 
@@ -271,12 +271,12 @@ class TitleState extends MusicBeatState
 
 		if (pressedEnter && !transitioning && skippedIntro)
 		{
-			#if !switch
-			NGio.unlockMedal(60960);
+			// #if !switch
+			// NGio.unlockMedal(60960);
 
 			// If it's Friday according to da clock
 			if (Date.now().getDay() == 5)
-				NGio.unlockMedal(61034);
+				// NGio.unlockMedal(61034);
 			#end
 
 			titleText.animation.play('press');
@@ -293,14 +293,14 @@ class TitleState extends MusicBeatState
 
 				var version:String = "v" + Application.current.meta.get('version');
 
-				if (version.trim() != NGio.GAME_VER_NUMS.trim() && !OutdatedSubState.leftState)
+				// if (version.trim() != NGio.GAME_VER_NUMS.trim() && !OutdatedSubState.leftState)
 				{
 					FlxG.switchState(new OutdatedSubState());
 					trace('OLD VERSION!');
 					trace('old ver');
 					trace(version.trim());
 					trace('cur ver');
-					trace(NGio.GAME_VER_NUMS.trim());
+					// trace(NGio.GAME_VER_NUMS.trim());
 				}
 				else
 				{
