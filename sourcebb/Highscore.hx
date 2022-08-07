@@ -16,8 +16,8 @@ class Highscore
 		var daSong:String = formatSong(song, diff);
 
 
-		#if !switch
-		NGio.postScore(score, song);
+		//#if !switch
+		//NGio.postScore(score, song);
 		#end
 
 
@@ -33,8 +33,8 @@ class Highscore
 	public static function saveWeekScore(week:Int = 1, score:Int = 0, ?diff:Int = 0):Void
 	{
 
-		#if !switch
-		NGio.postScore(score, "Week " + week);
+		//#if !switch
+		//NGio.postScore(score, "Week " + week);
 		#end
 
 
