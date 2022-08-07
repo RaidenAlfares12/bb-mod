@@ -1,6 +1,6 @@
 package;
 
-import io.newgrounds.objects.Medal.Difficulty;
+// import io.newgrounds.objects.Medal.Difficulty;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSubState;
