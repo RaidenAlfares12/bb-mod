@@ -2213,7 +2213,7 @@ class PlayState extends MusicBeatState
 				StoryMenuState.weekUnlocked[Std.int(Math.min(storyWeek + 1, StoryMenuState.weekUnlocked.length - 1))] = true;
 				if (SONG.validScore)
 				{
-					NGio.unlockMedal(60961);
+					//NGio.unlockMedal(60961);
 					Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 				}
 				FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
