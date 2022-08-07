@@ -300,7 +300,6 @@ class TitleState extends MusicBeatState
 					trace('old ver');
 					trace(version.trim());
 					trace('cur ver');
-					// trace(NGio.GAME_VER_NUMS.trim());
 				}
 				else
 				{
